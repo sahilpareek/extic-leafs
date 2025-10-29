@@ -202,6 +202,11 @@ ul, li, ol{
 .home-section{
   margin-top: 40px;
 }
+
+.home-section .slick-dots li button:before,
+.slick-dots li.slick-active button:before {
+    color: #00000000 !important;
+}
 .home-slide{
   min-height: 656px;
   border-radius: 70px;
