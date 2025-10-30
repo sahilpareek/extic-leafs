@@ -151,7 +151,7 @@ ul, li, ol{
 .nav-grad {
   position: relative;
   display: inline-block !important;
-  padding: 6px 18px !important;
+  padding: 6px 27px !important;
   font-family: var(--main-font);
   font-weight: 600;
   font-size: 18px;
@@ -172,7 +172,7 @@ ul, li, ol{
     background-size: 300% 300%;
     z-index: -1;
     animation: borderShift 5s ease infinite;
-    padding: 2.1px;
+    padding: 2px 2px 2px 2px;
     -webkit-mask: linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
@@ -807,4 +807,33 @@ ul, li, ol{
 .cmn-heading h1 {
     font-size: 55px;
     color: var(--black-color);
+}
+
+.form-control{
+    color: var(--black-color);
+  border-radius: 0px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.search-section .form-floating .form-control:focus{
+  box-shadow: none;
+  font-family: var(--second-font);
+  border-color: var(--second-color);
+}
+.search-section .form-floating label,
+.search-section .form-check-label{
+  font-family: var(--second-font);
+  color: #000;
+}
+
+.search-section .form-floating {
+    position: relative;
+}
+
+.search-section .search-main-icon {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
 }
